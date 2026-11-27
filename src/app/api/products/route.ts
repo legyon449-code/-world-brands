@@ -27,6 +27,7 @@ export async function GET(request: NextRequest) {
   const where = {
     status: "ACTIVE" as const,
     stock: { gt: 0 },
+    seller: { status: "ACTIVE" as const },
     ...(category ? { category: { slug: category } } : {}),
     ...(q
       ? {
