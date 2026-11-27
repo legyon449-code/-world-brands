@@ -1,6 +1,7 @@
 "use client";
 
 import { useMemo, useState } from "react";
+import Link from "next/link";
 import {
   ArrowRight, Search, ShoppingBag, Globe2, ShieldCheck, Truck,
   Sparkles, Menu, Heart, Star, ChevronDown, Instagram, Facebook,
@@ -54,7 +55,7 @@ export default function HomePage() {
 
       <header className="sticky top-0 z-40 border-b border-black/[.06] bg-[#f7f7f3]/95 backdrop-blur-xl">
         <div className="mx-auto flex max-w-7xl items-center justify-between gap-4 px-5 py-4 lg:px-8">
-          <a href="/" className="flex shrink-0 items-center gap-2.5" aria-label="WORLD BRANDS bosh sahifa">
+          <Link href="/" className="flex shrink-0 items-center gap-2.5" aria-label="WORLD BRANDS bosh sahifa">
             <span className="grid h-10 w-10 place-items-center rounded-xl bg-[#c7f36a] text-lg font-black">W.</span>
             <span className="text-[15px] font-black tracking-[.13em]">WORLD BRANDS</span>
           </a>
@@ -62,7 +63,7 @@ export default function HomePage() {
             <a className="transition hover:text-black" href="#categories">Kategoriyalar</a>
             <a className="transition hover:text-black" href="#featured">Tanlanganlar</a>
             <a className="transition hover:text-black" href="#about">Biz haqimizda</a>
-            <a className="transition hover:text-black" href="#seller">Sotuvchilar uchun</a>
+            <a className="transition hover:text-black" href="#seller">Sotuvchilar uchun</Link>
           </nav>
           <div className="flex items-center gap-2">
             <button className="hidden items-center gap-2 rounded-full border border-black/10 px-3.5 py-2 text-xs font-bold sm:flex">UZ <ChevronDown size={13}/><span className="mx-1 text-black/20">|</span> UZS</button>
@@ -130,7 +131,7 @@ export default function HomePage() {
 
       <section id="seller" className="mx-auto max-w-7xl px-5 py-16 lg:px-8 lg:py-20"><div className="relative overflow-hidden rounded-[2rem] bg-[#dfe9d2] p-8 sm:p-12 lg:p-14"><div className="absolute -right-10 -top-24 h-72 w-72 rounded-full border-[38px] border-white/30"/><div className="relative max-w-2xl"><p className="text-[10px] font-black tracking-[.2em] text-[#687e4d]">SOTUVCHILAR VA BRENDLAR UCHUN</p><h2 className="mt-3 text-3xl font-black leading-tight tracking-[-.06em] sm:text-5xl">Brendingizni yangi auditoriyaga olib chiqing.</h2><p className="mt-4 max-w-lg text-sm leading-6 text-[#65715e]">WORLD BRANDS platformasida do‘kon ochish va mahsulotlaringizni kengroq mijozlarga taqdim etish imkoniyati.</p><a href="mailto:hello@worldbrands.uz?subject=Seller%20registration" className="mt-7 inline-flex items-center gap-2 rounded-full bg-[#18241d] px-6 py-3.5 text-xs font-bold text-white transition hover:bg-[#2d4032]">Hamkor bo‘lish <ArrowRight size={15}/></a></div></div></section>
 
-      <footer className="bg-[#111a14] text-white"><div className="mx-auto max-w-7xl px-5 py-10 lg:px-8"><div className="flex flex-col justify-between gap-8 sm:flex-row"><div><a href="/" className="flex items-center gap-2.5"><span className="grid h-9 w-9 place-items-center rounded-xl bg-[#c7f36a] font-black text-[#18241d]">W.</span><span className="text-sm font-black tracking-[.13em]">WORLD BRANDS</span></a><p className="mt-4 max-w-xs text-xs leading-5 text-white/45">Dunyo brendlari va yangi imkoniyatlar — bir manzilda.</p></div><div className="grid grid-cols-2 gap-x-12 gap-y-3 text-xs text-white/55"><a href="#categories" className="hover:text-white">Kategoriyalar</a><a href="#about" className="hover:text-white">Biz haqimizda</a><a href="#seller" className="hover:text-white">Sotuvchilar uchun</a><a href="mailto:hello@worldbrands.uz" className="hover:text-white">Bog‘lanish</a></div><div className="flex gap-2"><a aria-label="Instagram" href="#seller" className="grid h-9 w-9 place-items-center rounded-full border border-white/15"><Instagram size={15}/></a><a aria-label="Facebook" href="#seller" className="grid h-9 w-9 place-items-center rounded-full border border-white/15"><Facebook size={15}/></a></div></div><div className="mt-10 flex flex-col gap-2 border-t border-white/10 pt-5 text-[10px] text-white/35 sm:flex-row sm:justify-between"><span>© 2026 WORLD BRANDS. Barcha huquqlar himoyalangan.</span><span>O‘zbekiston · UZS / USD / EUR</span></div></div></footer>
+      <footer className="bg-[#111a14] text-white"><div className="mx-auto max-w-7xl px-5 py-10 lg:px-8"><div className="flex flex-col justify-between gap-8 sm:flex-row"><div><Link href="/" className="flex items-center gap-2.5"><span className="grid h-9 w-9 place-items-center rounded-xl bg-[#c7f36a] font-black text-[#18241d]">W.</span><span className="text-sm font-black tracking-[.13em]">WORLD BRANDS</span></a><p className="mt-4 max-w-xs text-xs leading-5 text-white/45">Dunyo brendlari va yangi imkoniyatlar — bir manzilda.</p></div><div className="grid grid-cols-2 gap-x-12 gap-y-3 text-xs text-white/55"><a href="#categories" className="hover:text-white">Kategoriyalar</a><a href="#about" className="hover:text-white">Biz haqimizda</a><a href="#seller" className="hover:text-white">Sotuvchilar uchun</a><a href="mailto:hello@worldbrands.uz" className="hover:text-white">Bog‘lanish</a></div><div className="flex gap-2"><a aria-label="Instagram" href="#seller" className="grid h-9 w-9 place-items-center rounded-full border border-white/15"><Instagram size={15}/></a><a aria-label="Facebook" href="#seller" className="grid h-9 w-9 place-items-center rounded-full border border-white/15"><Facebook size={15}/></a></div></div><div className="mt-10 flex flex-col gap-2 border-t border-white/10 pt-5 text-[10px] text-white/35 sm:flex-row sm:justify-between"><span>© 2026 WORLD BRANDS. Barcha huquqlar himoyalangan.</span><span>O‘zbekiston · UZS / USD / EUR</span></div></div></footer>
     </main>
   );
 }
